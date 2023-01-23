@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorningStar StyleBox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sectionHolder">
+        <section class="inputSection">
+            <div class="inputDiv">
+                <input type="text" class="inputSearch" id="inputSearchM" placeholder="Enter Companies Symbol">
+                <button onclick="searchData()" id="searchButton">Go</button>
+            </div>
+        </section>
+        <section class="outputSection">
+            <div class="boxHeadings">
+                <p class="gridHeader">Growth</p>
+                <p class="gridHeader">Blend</p>
+                <p class="gridHeader">Value</p>
+            </div>
+            <div class="mainBox">
+                <div class="gridBox" id="gridOne">
+                    <div class="valueBox valueBoxOne"></div>
+                    <div class="valueBox valueBoxTwo"></div>
+                    <div class="valueBox valueBoxThree"></div>
+                </div>
+                <div class="gridBox" id="gridTwo">
+                    <div class="valueBox valueBoxTwo"></div>
+                    <div class="valueBox valueBoxOne"></div>
+                    <div class="valueBox valueBoxThree"></div>
+                </div>
+                <div class="gridBox" id="gridThree">
+                    <div class="valueBox valueBoxOne"></div>
+                    <div class="valueBox valueBoxTwo"></div>
+                    <div class="valueBox valueBoxThree"></div>
+                </div>
+            </div>
+            <div class="boxHeadingsBottom">
+                <p class="gridHeaderBottom">Small Cap</p>
+                <p class="gridHeaderBottom">Mid Cap</p>
+                <p class="gridHeaderBottom">Large Cap</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

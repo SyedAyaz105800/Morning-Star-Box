@@ -1,0 +1,89 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Main Section Holder */
+.sectionHolder{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 80vh;
+}
+
+@media screen and (max-width: 1200px){
+    .sectionHolder{
+        flex-direction: column;
+    }
+}
+
+/* Input Search Box */
+
+.inputDiv{
+    width: 450px;
+    display: flex;
+}
+.inputSearch{
+    width: 90%;
+    height: 50px;
+    margin-right: 0px;
+    border: 1px solid black;
+    border-right: none;
+}
+.inputSearch:active{
+    border: 1px solid black;
+    border-right: none;
+}
+#searchButton{
+    margin-left: 0px;
+    background-color: white;
+    border: 1px solid black;
+    width: 10%;
+    cursor: pointer;
+}
+#searchButton:active{
+    background-color: rgb(232, 232, 232);
+}
+
+/* Output Section */
+.outputSection{
+    position: relative;
+}
+
+/* Style Box */
+.mainBox{
+    display: flex;
+    flex-direction: column;
+}
+.gridBox{
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+}
+.valueBox{
+    width: 150px;
+    height: 150px;
+    margin: 1px;
+    margin-right: 2px;
+    margin-left: 2px;
+    background-color: rgb(232, 232, 232);
+}
+
+.boxHeadings{
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    left: -60px;
+    height: 450px;
+}
+.boxHeadings > p{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.boxHeadingsBottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
